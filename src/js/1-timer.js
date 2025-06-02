@@ -54,7 +54,7 @@ refs.startBtn.addEventListener('click', () => {
     const diff = userSelectedDate - now;
 
     if (diff <= 0) {
-      clearInterval(timerId);
+      clearInterval(intervalId);
       updateTimerDisplay({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       refs.dateInput.disabled = false;
       return;
